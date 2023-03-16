@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>contacto</title>
+</head>
+<body>
+    <div class="main"></div class="navigation active">
+        <span style="--1:0;--x:-1;--y:0;">
+        <ion-icon name="logo-facebook">q</ion-icon>
+        </span>
+        <span style="--1:0;--x:-1;--y:0;">
+        <ion-icon name="logo-instagram">w</ion-icon>
+        </span>
+        <span style="--1:0;--x:-1;--y:0;">
+        <ion-icon name="logo-twitter">r</ion-icon>
+        </span>
+        <span style="--1:0;--x:-1;--y:0;">
+        <ion-icon name="logo-twitch">r</ion-icon>
+        </span>
+        <span style="--1:0;--x:-1;--y:0;">
+        <ion-icon name="logo-youtube">d</ion-icon>
+        </span>
+        <span style="--1:0;--x:-1;--y:0;">
+        <ion-icon name="logo-discord">g</ion-icon>
+        </span>
+        <span style="--1:0;--x:-1;--y:0;">
+        <ion-icon name="logo-github">v</ion-icon>
+        </span>
+        <span style="--1:0;--x:-1;--y:0;">
+        <ion-icon name="logo-codepen">v</ion-icon>
+        </span>
+        <div>
+            <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+        </div>
+        <script type="module" 
+        src="https://unpkg.com/">
+        </script>
+        <script nomodule="" 
+        src="">
+        </script>
+        <script>
+            let navigation = document.querySelector('.navigation');
+            let close = document.querySelector('.close');
+            navigation.onclick = function(){
+                navigation.classList.add('.active');
+            }
+            close.onclick = function(){
+                navigation.classList.remove('.active')
+            }
+        </script>
+</body>
+</html>
