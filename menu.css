@@ -3,70 +3,53 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+body{
+    display: grid;
+    place-items: center;
     min-height: 100vh;
-    background: #161a23;
+    background: #262835;
+    font-size: 16px;
 }
-.main{
-    position: relative;
+ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 170px;
+    gap: 2rem;
+    list-style: none;
 }
-.main .navigation {
+
+ul li a{
     position: relative;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    background: #171515;
+    border-radius: 10px;
+    font-size: 2.2rem;
+    color: #949292;
+    transition: .5s;
 }
-.main .navigation span {
+ul li a:before {
+    content: '';
     position: absolute;
-    width: 7px;
-    height: 7px;
-    background: #fff;
-    transform: translate(calc(14px * var(--x)), calc(14px * var(--y)));
-    transition: transform 0.5, width 0.5s, height 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #0197fc;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
 }
-
-.main .navigation.active span {
-    width: 45px;
-    height: 45px;
-    background: #1f2536;
-    transition: 0.5s;
-    transition-delay: 0.4s;
-    pointer-events: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ul li a:hover:before {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #0197fc;
+    filter: blur(3px);
 }
-.main .navigation -- .close{
-    width:40px;
-    height: 40px;
-    pointer-events: initial;
-    transition-delay: 0.8s;
-    background: #20FC52;
-}
-
-.main .navigation -- .close ion-icon{
-    font-size: 2em;
-    scale: 8;
-    color: #18131c;
-    transition: 0.5s;
-
-}
-main .navigation.active -- .close ion-icon{
-    scale: 1;
-    transition-delay: 1s;
+ul li a:hover {
+    color: #7ec9fa;
+    box-shadow: 0 0 15px #0197fc;
+    text-shadow: 0 0 15px #0197fc;
 }
