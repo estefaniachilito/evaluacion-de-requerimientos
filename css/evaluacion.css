@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    background-color: #CACFD2;
+    color: white;
+}
+button{
+    text-align: center;
+    margin-left: 15px;
+background-color: #D2B4DE;
+color: white;
+border: none;
+
+}
+input{
+    background-color: #D2B4DE;
+    color: white;
+    border: none;
+
+}
