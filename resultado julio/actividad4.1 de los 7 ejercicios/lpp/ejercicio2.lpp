@@ -1,0 +1,30 @@
+entero num1, num2, num3
+
+inicio
+escriba "escriba 3 numeros a continuacion: "
+escriba "digite el primero numero "
+lea num1
+escriba "digite el segundo numero "
+lea num2
+escriba "digite el tercer numero "
+lea num3
+llamar nueva_linea
+
+si num1<num2 entonces
+si num1 < num3 entonces 
+escriba "el numero menor es el: ", num1
+fin si
+fin si
+si num2<num1 entonces 
+si num2 < num3 entonces
+escriba "el numero menor es el. ", num2
+fin si
+fin si
+si num3<num1 entonces 
+si num3 < num2 entonces
+escriba "el numero menor es el ", num3
+
+fin si
+fin si
+
+fin

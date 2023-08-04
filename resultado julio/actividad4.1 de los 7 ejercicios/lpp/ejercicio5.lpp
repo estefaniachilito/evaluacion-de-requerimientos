@@ -1,0 +1,19 @@
+cadena [5] turno
+entero horas, total
+
+inicio
+escriba "que turno realizo?: "
+lea turno
+escriba "cuantas horas trabajo: "
+lea horas
+llamar nueva_linea
+si turno= "diurno" entonces 
+total <- horas*10
+escriba "el valor a pagar es de ", total, " dolares"
+sino 
+total <- horas*15
+escriba "el valor a pagar es de ", total, " dolares"
+fin si
+
+
+fin

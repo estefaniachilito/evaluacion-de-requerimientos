@@ -1,0 +1,12 @@
+entero horas,total
+
+inicio
+escriba "ingrese las horas que su vehiculo estuvo estacionado: "
+lea horas
+total <- horas*1500
+escriba "el total a pagar es ", total
+
+
+
+fin
+

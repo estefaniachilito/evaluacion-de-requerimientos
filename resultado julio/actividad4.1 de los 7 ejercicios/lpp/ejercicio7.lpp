@@ -1,0 +1,29 @@
+entero sueldo, total, descuento
+
+inicio
+escriba "ingrese su sueldo: "
+lea sueldo
+si sueldo <= 500000 entonces
+descuento <- sueldo *0.12
+total <- sueldo-descuento
+escriba "el descuento realizado es del 12%, ", descuento
+llamar nueva_linea
+escriba "el total a pagar es ", total
+fin si
+si sueldo > 500000 entonces 
+si sueldo <= 1000000 entonces
+descuento <- sueldo *0.15
+total <- sueldo- descuento
+escriba "el descuento realizado es del 15%, ", descuento
+llamar nueva_linea
+escriba "el total a pagar es ", total
+fin si
+fin si
+si sueldo > 1000000 entonces 
+descuento <- sueldo *0.18
+total <- sueldo-descuento
+escriba "el descuento realizado es del 18%, ", descuento
+llamar nueva_linea
+escriba "el total a pagar es ", total
+fin si
+fin

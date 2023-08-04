@@ -1,0 +1,19 @@
+entero horas,total, extra, aumento
+
+inicio
+escriba "ingrese las horas trabajadas: "
+lea horas
+si horas >= 40 entonces
+aumento<- 40 *20
+total <- horas - 40
+extra <- total *25 +  aumento
+escriba "su suedo sera: ", extra
+sino
+total <- horas *20 
+escriba "su suedo sera: ", total
+fin si
+
+
+
+fin
+
