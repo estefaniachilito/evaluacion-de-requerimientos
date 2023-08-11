@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anemia</title>
+    <script src="recuperacion2.js"></script>
+</head>
+<body>
+    <h3>Ingrese su edad</h3>
+    <input type="number"  id="edad">
+    <h3>seleccione su genero</h3>
+    <select name="genero" id="genero">
+        <option value="mes">femenino</option>
+        <option value="meses">masculino</option>
+    </select><br>
+    </select>
+    <h3>Ingrese su nivel de hemoglobina</h3>
+    <input type="number" id="nivel">
+    <h3>seleccione la cantidad de vida</h3>
+    <select name="cantidad" id="cantidad">
+        <option value="mes">mes</option>
+        <option value="meses">meses</option>
+        <option value="años">años</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="calcular()">Enviar</button>
+    <p id="mensaje"></p>
+    
+</body>
+</html>
